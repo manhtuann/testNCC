@@ -39,7 +39,7 @@ li {
 .main {
     position: absolute;
     right: 0;
-    width: calc(100% - 100px);
+    width: calc(100% - 150px);
     padding: 0 100px;
 }
 
@@ -53,6 +53,8 @@ li {
     background: #EFEFEF;
     text-align: center;
     border: 5px solid green;
+    overflow: hidden;
+
 }
 
 .description h2 {
@@ -101,4 +103,22 @@ li {
     font-size: 14px;
     line-height: 19px;
     color: #000000;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .logo  svg {
+    
+    }
+    .description p {
+        margin: 0;
+    }
+    .description {
+        overflow: hidden;
+    }
 }
